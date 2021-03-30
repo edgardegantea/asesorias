@@ -23,18 +23,7 @@
     @if (Route::has('login'))
         <div class="text-center">
             @auth
-                @foreach($institute as $inst)
-                    <div class="text-center">
-                        <h2>{{ $inst->officialName }}</h2>
-                        <h3 class="text-green">{{ $inst->name }}</h3>
 
-                        <h3>{{ $inst->slogan }}</h3>
-
-                        <h1 class="text-bold">Sistema de Asesoría Académica</h1>
-
-                    </div>
-
-                @endforeach
                 <a href="{{ url('/home') }}" class="btn btn-primary btn-lg">Entrar</a>
             @else
                 <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Iniciar sesión</a>

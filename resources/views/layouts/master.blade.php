@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AdminLTE 3 | Fixed Footer Layout</title>
+    <title>Asesorías</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -11,7 +11,11 @@
     <link rel="stylesheet" href="{{  asset('adminlte/plugins/fontawesome-free/css/all.min.css') }}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{  asset('adminlte/dist/css/adminlte.min.css') }}">
-    <!-- <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"> -->
+    <link rel="stylesheet" href="{{  asset('adminlte/dist/css/dataTables.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="{{  asset('adminlte/dist/css/adminlte.min.css') }}">
+    <link rel="stylesheet" href="{{  asset('adminlte/plugins/datatables-bs4/css/adminlte.min.css') }}">
+
+<!-- <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"> -->
 </head>
 
 <body class="hold-transition sidebar-mini layout-footer-fixed">
@@ -170,6 +174,7 @@
             <!-- Sidebar Menu -->
             <nav class="mt-2">
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+
                     <!-- Add icons to the links using the .nav-icon class
                          with font-awesome or any other icon font library -->
                     <li class="nav-item">
@@ -201,6 +206,7 @@
                             </li>
                         </ul>
                     </li>
+
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-user-astronaut"></i>
@@ -230,6 +236,12 @@
                                 <a href="../layout/top-nav-sidebar.html" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Asesoría finalizada</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ url('/configuration') }}" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Configuración</p>
                                 </a>
                             </li>
                         </ul>
@@ -323,6 +335,10 @@
 <script src="{{ asset('adminlte/plugins/bs-stepper/js/bs-stepper.min.js') }}"></script>
 <!-- dropzonejs -->
 <script src="{{ asset('adminlte/plugins/dropzone/min/dropzone.min.js') }}"></script>
+
+<!-- DataTables -->
+<script src="{{ asset('plugins/datatables/jquery.dataTables.js') }}"></script>
+<script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.js') }}"></script>
 
 
 <script>
